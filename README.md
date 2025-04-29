@@ -1,6 +1,6 @@
-# Noah Ojile – Personal Portfolio
+[![MasterHead](portfolio.jpg)](https://noahojile.vercel.app)
 
-![Portfolio Screenshot](portfolio.jpg)
+# Noah Ojile – Personal Portfolio
 
 Welcome to my personal portfolio website, showcasing my skills, projects, and experiences as a full-stack developer. This site serves as a digital resume and a testament to my journey in the tech world.
 
