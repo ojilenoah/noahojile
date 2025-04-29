@@ -57,8 +57,8 @@ To run this project locally:
 
 Feel free to reach out to me via:
 
-- **Email**: [your.email@example.com](mailto:noahojile04@gmail.com)
-- **Twitter**: [@yourhandle](https://twitter.com/0xno4h)
+- **Email**: [noahojile04@gmail.com](mailto:noahojile04@gmail.com)
+- **Twitter**: [@0xno4h](https://twitter.com/0xno4h)
 
 ## 📄 License
 
