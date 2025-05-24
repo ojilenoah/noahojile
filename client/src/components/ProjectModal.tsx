@@ -169,26 +169,69 @@ export default function ProjectModal({ isOpen, projectId, onClose }: ProjectModa
             )}
           </div>
           
-          <a 
-            href={project.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block w-full text-center text-xs font-sequel py-3 bg-accent/10 hover:bg-accent/15 text-foreground border border-accent/40 transition-all duration-300 rounded-md shadow-sm hover:shadow-md"
-            style={{
-              borderColor: 'var(--border-accent-color, rgba(0, 117, 79, 0.4))'
-            }}
-          >
-            <span className="flex items-center justify-center">
-              <svg 
-                className="w-3 h-3 mr-2 theme-text-primary" 
-                viewBox="0 0 24 24" 
-                fill="currentColor"
+          {project.type === 'mobile' && project.downloadUrl ? (
+            <div className="space-y-2">
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block w-full text-center text-xs font-sequel py-3 bg-accent/10 hover:bg-accent/15 text-foreground border border-accent/40 transition-all duration-300 rounded-md shadow-sm hover:shadow-md"
+                style={{
+                  borderColor: 'var(--border-accent-color, rgba(0, 117, 79, 0.4))'
+                }}
               >
-                <path d="M13 3v7h5l-6 11v-7H7l6-11z" />
-              </svg>
-              VIEW PROJECT
-            </span>
-          </a>
+                <span className="flex items-center justify-center">
+                  <svg 
+                    className="w-3 h-3 mr-2 theme-text-primary" 
+                    viewBox="0 0 24 24" 
+                    fill="currentColor"
+                  >
+                    <path d="M13 3v7h5l-6 11v-7H7l6-11z" />
+                  </svg>
+                  VISIT WEBSITE
+                </span>
+              </a>
+              
+              <a 
+                href={project.downloadUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block w-full text-center text-xs font-sequel py-3 bg-blue-500/10 hover:bg-blue-500/15 text-foreground border border-blue-500/40 transition-all duration-300 rounded-md shadow-sm hover:shadow-md"
+              >
+                <span className="flex items-center justify-center">
+                  <svg 
+                    className="w-3 h-3 mr-2 theme-text-primary" 
+                    viewBox="0 0 24 24" 
+                    fill="currentColor"
+                  >
+                    <path d="M12 2L12 15M7 10l5 5 5-5M5 20h14" />
+                  </svg>
+                  DOWNLOAD APP
+                </span>
+              </a>
+            </div>
+          ) : (
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block w-full text-center text-xs font-sequel py-3 bg-accent/10 hover:bg-accent/15 text-foreground border border-accent/40 transition-all duration-300 rounded-md shadow-sm hover:shadow-md"
+              style={{
+                borderColor: 'var(--border-accent-color, rgba(0, 117, 79, 0.4))'
+              }}
+            >
+              <span className="flex items-center justify-center">
+                <svg 
+                  className="w-3 h-3 mr-2 theme-text-primary" 
+                  viewBox="0 0 24 24" 
+                  fill="currentColor"
+                >
+                  <path d="M13 3v7h5l-6 11v-7H7l6-11z" />
+                </svg>
+                VIEW PROJECT
+              </span>
+            </a>
+          )}
         </div>
       </CustomDialogContent>
     </Dialog>
