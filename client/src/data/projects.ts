@@ -5,6 +5,8 @@ export interface Project {
   technologies: string[];
   link: string;
   imageUrl?: string;
+  downloadUrl?: string;
+  type?: 'web' | 'mobile';
 }
 
 export const projects: Project[] = [
@@ -87,5 +89,25 @@ export const projects: Project[] = [
     technologies: ["Next.js", "React", "Canvas API", "TypeScript"],
     link: "https://pong-game-noah.vercel.app/",
     imageUrl: "/images/pong-game.jpg"
+  },
+  {
+    id: 11,
+    title: "Coinly",
+    description: "Pay Your Bills Effortlessly. Buy & Sell Crypto, Trade Gift Cards, Send and Receive Money Nationwide, Pay Utility Bills With Ease. The best payment application to manage your funds wisely.",
+    technologies: ["React Native", "Expo", "TypeScript", "Crypto API"],
+    link: "https://thecoinlyapp.com/ng/",
+    downloadUrl: "https://expo.dev/artifacts/eas/pqa6hrJmFf8KyyVC5en6bh.apk",
+    type: "mobile",
+    imageUrl: "https://api.microlink.io/?url=https://thecoinlyapp.com/ng/&screenshot=true&embed=screenshot.url"
+  },
+  {
+    id: 12,
+    title: "Cheepay",
+    description: "Fast & Secure Payments at Your Fingertips. Send money, pay bills, and manage your finances with our secure and reliable mobile payment solution.",
+    technologies: ["React Native", "Expo", "TypeScript", "Payment API"],
+    link: "https://cheepayapp.top/",
+    downloadUrl: "https://expo.dev/artifacts/eas/uVyCMAzJ28DoTmxHxDP6V1.apk",
+    type: "mobile",
+    imageUrl: "https://api.microlink.io/?url=https://cheepayapp.top/&screenshot=true&embed=screenshot.url"
   }
 ];
